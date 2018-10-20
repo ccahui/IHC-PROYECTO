@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Grado | Colegio ABC</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link  rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+        <script src="/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="/js/popper.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/all.min.js"></script>
+        <script src="/js/angular1.7.js"></script>
+        <script src="/appAngular/app.js"></script>
+		<script src="/js/eliminar.js"></script>
+
+
+        <style>
+            .jumb {
+                padding: 1rem 1rem;
+                margin-bottom: 1rem;
+            }
+
+            @media (min-width: 576px) {
+                .jumb {
+                    padding: 1rem 2rem;
+                }
+            }
+        </style>
+        
+    </head>
+
+    <body ng-app="miApp">
+        
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark" >
+
+            <a href="/colegio" class="navbar-brand ml-md-3">
+                <strong> Inicio</strong>
+            </a>
+            <a href="/colegio/alumnos" class="navbar-brand ">
+                <strong>Alumno</strong>
+            </a>
+            <a href="#" class="navbar-brand ">
+                <strong>GRADO</strong>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#contenidoNav3">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- mr - auto Coloca todo hacia la Izquierda-->
+            <div class="collapse navbar-collapse" id="contenidoNav3">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="/cerrarSession" class="nav-link active font-weight-bold">Cerrar Session <i class="fas fa-sign-out-alt"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/colegio">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="/colegio/alumnos">Alumnos</a></li>
+                        <li class="breadcrumb-item active">Grado</li>
+                    </ol>         
+                </div>
+            </div>
+        </div>
+        <div class="container" ng-controller="AlumnosCtrol">
+            <div class="jumb">
+                <div class="container-fluid">
+                    <h2 class="font-weight-bold">Alumnos de Grado X</h2>
+                    <button class='btn btn-outline-primary' id='seleccionar'>Seleccionar Todo</button>
+                    <a href='alumnos-grado.html' class='btn btn-outline-danger' id='borrar'>Borrar</a>
+                    <button class="btn btn-outline-secondary" id="cancelar">Cancelar</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class='thead-light'>
+                            <tr>
+                                <th ng-click="ordenar = 'id'; reverso = !reverso">Codigo</th>
+                                <th ng-click="ordenar = 'nombre'; reverso = !reverso">Nombre</th>
+                                <th ng-click="ordenar = 'apellidos'; reverso = !reverso">Apellido</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr ng-repeat="alumno in alumnos | orderBy:ordenar:reverso">
+
+                                <td><input type='checkbox' class='checkbox' name='borrarElementos'> {{ alumno.id}}</td>
+                                <td>{{alumno.nombre}}</td>
+                                <td>{{alumno.apellidos}}</td>
+                                <td>
+                                    <a href='/colegio/alumnos/ver' class='btn btn-link py-0'>Ver <i class="fas fa-eye"></i> </a>
+                                    <a href='/colegio/alumnos/editar' class='btn btn-link py-0 text-info'>Editar <i class="fas fa-edit"> </i></a>
+                                    <a href="/colegio/alumnos/grado" class="btn btn-link py-0 text-danger confirmar" ng-click="confirmar()">Eliminar <i class="fas fa-trash-alt"></i></a>
+                                </td>   
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container text-center">
+            <div class="d-inline-block">
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                        <a href="Bootstrap.html" class="page-link">
+                            &laquo;
+                        </a>
+                    </li>
+                    <li class="page-item active"><a href="/colegio/alumnos/grado" class="page-link">1</a></li> 
+                    <li class="page-item"><a href="/colegio/alumnos/grado" class="page-link">2</a></li> 
+                    <li class="page-item"><a href="/colegio/alumnos/grado" class="page-link">3</a></li> 
+                    <li class="page-item"><a href="/colegio/alumnos/grado" class="page-link">4</a></li> 
+                    <li class="page-item">
+                        <a href="/colegio/alumnos/grado" class="page-link">
+                            &raquo;
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <div style='text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;'><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_medium=website_kris-ti4n&amp;utm_content=footer_img"><img src="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"  alt="www.000webhost.com"></a></div></body>
+</html>

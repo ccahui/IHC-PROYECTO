@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<servlet>
+		<servlet-name>index</servlet-name>
+		<servlet-class>web.index</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>index</servlet-name>
+		<url-pattern>/colegio</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>alumnosIndex</servlet-name>
+		<servlet-class>alumnos.index</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>alumnosIndex</servlet-name>
+		<url-pattern>/colegio/alumnos</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>alumnosGrado</servlet-name>
+		<servlet-class>alumnos.grado</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>alumnosGrado</servlet-name>
+		<url-pattern>/colegio/alumnos/grado</url-pattern>
+	</servlet-mapping>
+	
+			<servlet>
+		<servlet-name>alumnosVer</servlet-name>
+		<servlet-class>alumnos.ver</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>alumnosVer</servlet-name>
+		<url-pattern>/colegio/alumnos/ver</url-pattern>
+	</servlet-mapping>
+	
+				<servlet>
+		<servlet-name>alumnosEditar</servlet-name>
+		<servlet-class>alumnos.editar</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>alumnosEditar</servlet-name>
+		<url-pattern>/colegio/alumnos/editar</url-pattern>
+	</servlet-mapping>
+	
+					<servlet>
+		<servlet-name>alumnosCrear</servlet-name>
+		<servlet-class>alumnos.crear</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>alumnosCrear</servlet-name>
+		<url-pattern>/colegio/alumnos/crear</url-pattern>
+	</servlet-mapping>
+	
+						<servlet>
+		<servlet-name>cerrarSession</servlet-name>
+		<servlet-class>web.cerrarSession</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>cerrarSession</servlet-name>
+		<url-pattern>/cerrarSession</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>iniciarSesion</servlet-name>
+		<servlet-class>web.iniciarSesion</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>iniciarSesion</servlet-name>
+		<url-pattern>/iniciar-sesion</url-pattern>
+	</servlet-mapping>
+	
+			<servlet>
+		<servlet-name>registrarse</servlet-name>
+		<servlet-class>web.registrarse</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>registrarse</servlet-name>
+		<url-pattern>/registrarse</url-pattern>
+	</servlet-mapping>
+	
+				<servlet>
+		<servlet-name>recuperarContrasena</servlet-name>
+		<servlet-class>web.recuperarContrasena</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>recuperarContrasena</servlet-name>
+		<url-pattern>/recuperar-contraseña</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
