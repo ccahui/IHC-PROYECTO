@@ -15,6 +15,7 @@ import com.google.appengine.api.users.UserServiceFactory;
 public class index extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		resp.setContentType("text/html");
+		resp.setCharacterEncoding("UTF-8");
 		UserService us = UserServiceFactory.getUserService();
 		User user = us.getCurrentUser();
 
