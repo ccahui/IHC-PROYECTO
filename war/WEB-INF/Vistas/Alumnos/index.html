@@ -6,41 +6,64 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <title>Grados Alumnos | Colegio ABC</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>Grados Alumnos | Colegio ABC</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="/css/navbar.css">
-<link rel="stylesheet" type="text/css" href="/css/footer.css">
+
 <script src="/js/jquery-3.3.1.slim.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/all.min.js"></script>
 
+<style>
 
-        <style>
-            .jumb {
-                padding: 1rem 1rem;
-                margin-bottom: 1rem;
-            }
+  .list-group .list-group-item{
+ 	color:#078fff;
+ }
+ 
+ .breadcrumb{
+ 	background:#18BC9C;
+ }
+.breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  color: black;
+  content: "/";
+}
+.breadcrumb-item a{
+	color:black;
+}
 
-            @media (min-width: 576px) {
-                .jumb {
-                    padding: 1rem 1rem;
-                }
-            }
-        </style>
-    </head>
+.breadcrumb-item + .breadcrumb-item:hover::before {
+  text-decoration: underline;
+}
 
-    <body class="pt-0">
+.breadcrumb-item + .breadcrumb-item:hover::before {
+  text-decoration: none;
+}
 
-<div
+.breadcrumb-item.active {
+  color: #fffff1;
+  font-weight:bold;
+}
+
+ 
+ 
+</style>
+
+</head>
+
+<body class="pt-0">
+
+	<div
 		class="navbar navbar-expand-lg navbar-dark bg-primary py-1 font-weight-bold"
 		style="font-size: 16px">
 		<div class="container">
-			<a href="/colegio" class="navbar-brand"> <img src="/images/logo.png"
-				style="width: 70px"> <span class="font-weight-bold">
-					COLEGIO ABC</span></a>
+			<a href="/colegio" class="navbar-brand"> <img
+				src="/images/logo.png" style="width: 70px"> <span
+				class="font-weight-bold"> COLEGIO ABC</span></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarResponsive" aria-controls="navbarResponsive"
 				aria-expanded="false" aria-label="Toggle navigation">
@@ -48,67 +71,77 @@ and open the template in the editor.
 			</button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav">
-				<li class="nav-item "><a class="nav-link" href="#" id="themes"><i class="fas fa-home"></i> Inicio</</li>
+					<li class="nav-item "><a class="nav-link" href="#" id="themes"><i
+							class="fas fa-home"></i> Inicio</</li>
+							
 					<li class="nav-item "><a class="nav-link" href="#" id="themes">ALUMNOS</a></li>
 
 				</ul>
 
 				<ul class="nav navbar-nav ml-auto">
-					<li class="nav-item"><a href="#" class="nav-link notifications"><i class="fas fa-envelope"></i><span class="badge badge-danger"  > 1</span></a></li>
-			<li class="nav-item"><a href="#" class="nav-link messages"><i class="fas fa-bell"></i><span class="badge badge-danger"> 10</span></a></li>
-	
-					
-					<li class="nav-item dropdown font-weight-normal"><a 
-						class="nav-link dropdown-toggle py-1" data-toggle="dropdown" href="#"
-						id="download"><img src="/images/foto.jpg" style="width: 32px" class="rounded-circle" style=> Carlos Garcia<span class="caret"></span></a>
+					<li class="nav-item"><a href="#"
+						class="nav-link notifications"><i class="fas fa-envelope"></i><span
+							class="badge badge-danger"> 1</span></a></li>
+					<li class="nav-item"><a href="#" class="nav-link messages"><i
+							class="fas fa-bell"></i><span class="badge badge-danger">
+								10</span></a></li>
+
+
+					<li class="nav-item dropdown font-weight-normal"><a
+						class="nav-link dropdown-toggle py-1" data-toggle="dropdown"
+						href="#" id="download"><img src="/images/foto.jpg"
+							style="width: 32px" class="rounded-circle" style=> Carlos
+							Garcia<span class="caret"></span></a>
 						<div class="dropdown-menu" aria-labelledby="download">
-							
+
 							<a class="dropdown-item"
-								href="https://jsfiddle.net/bootswatch/jmg3gykg/"><i class="fas fa-user"></i> Mi Perfil</a> 
-															<div class="dropdown-divider"></div>
-								<a
-								class="dropdown-item" href="../4/flatly/bootstrap.min.css"><i class="fas fa-question-circle"></i> Obtener Ayuda</a>
-			<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="../4/flatly/bootstrap.min.css"><i class="fas fa-power-off"></i> Cerrar Sesión</a>
-						</div>
-						</li>
-						
+								href="https://jsfiddle.net/bootswatch/jmg3gykg/"><i
+								class="fas fa-user"></i> Mi Perfil</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="../4/flatly/bootstrap.min.css"><i
+								class="fas fa-question-circle"></i> Obtener Ayuda</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="../4/flatly/bootstrap.min.css"><i
+								class="fas fa-power-off"></i> Cerrar Sesión</a>
+						</div></li>
+
 
 				</ul>
 
 			</div>
 		</div>
+	</div>
+	<br>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="/colegio">Inicio</a></li>
+					
+					<li class="breadcrumb-item active">Alumnos</li>
+				</ol>
+				<h4 class="mx-2">
+					<a href="/colegio/alumnos/crear" class="text-primary"><i
+						class="fas fa-plus"></i> Crear Alumno </a>
+				</h4>
+			</div>
 		</div>
-        <br>
-        <div class="container-fluid">
-            <div class="row">
-            <div class="col-md-6">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/colegio">Inicio</a></li>
-                    <li class="breadcrumb-item active">Alumnos</li>
-                </ol>
-                <h4 class="mx-2"><a href="/colegio/alumnos/crear" class="text-primary"><i class="fas fa-plus"></i> Crear Alumno </a></h4>
-            </div>
-        </div>
-        <div class="container">
-            <div class="jumb">
-                <div class="container-fluid">
-                    <h2 class="font-weight-bold">Grados del Colegio</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-10 col-md-6 col-xl-5">
-                    <div class="btn-group btn-group-vertical btn-block">
-                        <a href= "/colegio/alumnos/grado" class="btn btn-outline-dark">Primer Grado</a>
-                        <a href= "/colegio/alumnos/grado" class="btn btn-outline-dark">Segundo Grado</a>
-                        <a href= "/colegio/alumnos/grado" class="btn btn-outline-dark">Tercer Grado</a>
-                        <a href= "/colegio/alumnos/grado" class="btn btn-outline-dark">Cuarto Grado</a>
-                        <a href= "/colegio/alumnos/grado" class="btn btn-outline-dark">Quinto Grado</a>
-                        <a href= "/colegio/alumnos/grado" class="btn btn-outline-dark">Sexto Grado</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
+		<div class="container">
 
+			<div class="row">
+				<div class="col-sm-10 col-md-6 col-xl-5">
+					<h4 class="py-1 text-primary">Grados del Colegio</h4>
+					<div class="list-group">
+						<a href="/colegio/alumnos/grado" class="list-group-item">
+							Primer Grado </a> <a href="/colegio/alumnos/grado"
+							class="list-group-item">Segundo Grado</a>
+						<a href="/colegio/alumnos/grado" class="list-group-item">Tercer
+							Grado</a> <a href="/colegio/alumnos/grado" class="list-group-item">Cuarto
+							Grado</a> <a href="/colegio/alumnos/grado" class="list-group-item">Quinto
+							Grado</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
 </html>
