@@ -1,0 +1,36 @@
+
+
+  .list-group .list-group-item{
+ 	color:#078fff;
+ }
+ 
+ .breadcrumb{
+ 	background:#18BC9C;
+ }
+.breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  color: black;
+  content: "/";
+}
+.breadcrumb-item a{
+	color:black;
+	font-size:16px;
+}
+
+.breadcrumb-item + .breadcrumb-item:hover::before {
+  text-decoration: underline;
+}
+
+.breadcrumb-item + .breadcrumb-item:hover::before {
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+  color: #fffff1;
+	font-size:16px;
+  font-weight:bold;
+}
+
+ 
+ 
