@@ -64,7 +64,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>cerrarSession</servlet-name>
-		<url-pattern>/cerrarSession</url-pattern>
+		<url-pattern>/cerrar-sesion</url-pattern>
 	</servlet-mapping>
 	
 		<servlet>
