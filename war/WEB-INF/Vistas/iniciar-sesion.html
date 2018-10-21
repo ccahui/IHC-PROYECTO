@@ -103,6 +103,9 @@
 					<li class="nav-item"><a class="nav-link"
 						href="#">Contactenos</a>
 					</li>
+										<li class="nav-item"><a class="nav-link"
+						href="/colegio/alumnos">ALUMNOS</a>
+					</li>
 				</ul>
 
 
@@ -126,12 +129,12 @@
 		</div>
 		</div>
 <div class="login-form">
-    <form action="/colegio/alumnos">
+    <form action="/iniciar-sesion" method="post">
         <h2 class="text-center font-weight-bold">Iniciar Sesión</h2>		
         <div class="text-center social-btn">
             <a href="#" class="btn btn-primary btn-block"><i class="fab fa-facebook-f mr-2" ></i> Ingresar con <b>Facebook</b></a>
             <a href="#" class="btn btn-info btn-block"><i class="fab fa-twitter mr-1"></i> Ingresar con <b>Twitter</b></a>
-			<a href="/colegio/alumnos" class="btn btn-danger btn-block"><i class="fab fa-google mr-1"></i> Ingresar con <b>Google</b></a>
+			<a href="#" class="btn btn-danger btn-block"><i class="fab fa-google mr-1"></i> Ingresar con <b>Google</b></a>
         </div>
 		<div class="or-seperator"><i>o</i></div>
         <div class="form-group">
@@ -142,7 +145,7 @@
                 	<i class="fa fa-user" style="color:black"></i>
                 	</div>
                 </div>
-                <input type="text" class="form-control"  placeholder="Usuario" required="required">
+                <input type="text" class="form-control" name="username" placeholder="Usuario" required="required">
             </div>
         </div>
 		<div class="form-group">
@@ -152,7 +155,7 @@
                 	<i class="fa fa-lock" style="color:black"></i>
                 	</div>
                 </div>
-                <input type="password" class="form-control"  placeholder="Contraseña" required="required">
+                <input type="password" class="form-control"  name="password" placeholder="Contraseña" required="required">
             </div>
         </div>        
         

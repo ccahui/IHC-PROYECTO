@@ -16,12 +16,14 @@ public class index extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		resp.setContentType("text/html");
 		resp.setCharacterEncoding("UTF-8");
-		UserService us = UserServiceFactory.getUserService();
-		User user = us.getCurrentUser();
+		//UserService us = UserServiceFactory.getUserService();
+		//User user = us.getCurrentUser();
 
-		if(user == null){
+		HttpSession sesion = req.getSession();
+		
+	/*	if(user == null){
 			resp.sendRedirect(us.createLoginURL(req.getRequestURI()));}
-		else if(us.isUserAdmin() || user.getEmail().equals("richarteq@gmail.com")){
+		else if(us.isUserAdmin() || user.getEmail().equals("richarteq@gmail.com") ||sesion.getAttribute("usuario") != null ){
 	
 			try {
 				req.getRequestDispatcher("/WEB-INF/Vistas/Alumnos/index.html").forward(req, resp);
@@ -29,6 +31,13 @@ public class index extends HttpServlet {
 				e.printStackTrace();
 			}
 		
+		}*/
+		if(sesion.getAttribute("usuario") != null){
+			try {
+				req.getRequestDispatcher("/WEB-INF/Vistas/Alumnos/index.html").forward(req, resp);
+			} catch (ServletException e) {
+				e.printStackTrace();
+			}
 		}
 		else {
 			

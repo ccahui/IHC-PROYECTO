@@ -69,8 +69,8 @@
 		</div>
 		<br>
 		<div class="container">
-			<h3>Inicie Sesion con una cuenta </h3>
-			<p> Puede registrarse <a href="/registrarse">Aqui</a></p>
+			<h3>Inicie Sesion con una cuenta valida: Usuario === Password</h3>
+			<p> Iniciar Session <a href="/iniciar-sesion">Aqui</a></p>
 		</div>
 		
 

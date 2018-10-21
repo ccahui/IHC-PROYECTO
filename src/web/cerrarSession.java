@@ -6,6 +6,7 @@ import java.io.PrintWriter;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.google.appengine.api.users.User;
 import com.google.appengine.api.users.UserService;
@@ -21,8 +22,9 @@ public class cerrarSession extends HttpServlet {
  
 	 UserService us = UserServiceFactory.getUserService();
 	 User user = us.getCurrentUser();
+ 	HttpSession sesion = req.getSession();
+ 	sesion.removeAttribute("usuario");
  	
-	 
 	 if(user == null){
 		 resp.sendRedirect("/colegio");
  	}else{

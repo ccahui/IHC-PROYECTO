@@ -20,4 +20,20 @@ public class iniciarSesion extends HttpServlet {
 	
 
 	}
+	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+		resp.setContentType("text/html");
+
+		String usuario = req.getParameter("username");
+		String password = req.getParameter("password");
+        
+
+		//Cree la Session, tengo una variable de Session
+		if(usuario.equals(password)){
+			HttpSession session = req.getSession();
+			session.setAttribute("usuario", usuario);
+		}
+		resp.sendRedirect("/colegio/alumnos");
+		
+
+	}
 }
