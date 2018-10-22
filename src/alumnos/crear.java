@@ -27,7 +27,6 @@ public class crear extends HttpServlet {
 			} catch (ServletException e) {
 				e.printStackTrace();
 			}
-		
 		}
 		else {
 			

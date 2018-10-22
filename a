@@ -1,0 +1,105 @@
+[33mcommit 6b440d7c89a9ed2317ffb6fceb12394906ed7bfc[m
+Author: ccahui <kris_ti4n@hotmail.com>
+Date:   Sun Oct 21 20:50:49 2018 -0500
+
+    Contrasena Google App Engine no me reconocio contraseña
+
+[33mcommit dd7113d5169c2534d5b3c058a15d3d6a7fbe49bd[m
+Merge: 2a28f19 fe2b9ce
+Author: ccahui <kris_ti4n@hotmail.com>
+Date:   Sun Oct 21 20:45:02 2018 -0500
+
+    Merge branch 'master' of https://github.com/ccahui/IHC-PROYECTO
+    
+    "No se que hice pero ojala funcione"
+
+[33mcommit 2a28f19577c3c8f35fd15813675f90622bfb2d1f[m
+Author: ccahui <kris_ti4n@hotmail.com>
+Date:   Sun Oct 21 17:33:35 2018 -0500
+
+    Variables de Sesion
+
+[33mcommit 2d427b911e8042ceb8984e74d0e8beb58a9e502d[m
+Author: ccahui <kris_ti4n@hotmail.com>
+Date:   Sun Oct 21 16:32:20 2018 -0500
+
+    Funcionando, todavia sin Login de Variable de Sesion
+
+[33mcommit 368d8ec6b0fc1541597b634a087509d92efcccf2[m
+Author: ccahui <kris_ti4n@hotmail.com>
+Date:   Sun Oct 21 16:10:12 2018 -0500
+
+    Todo Funcionando, modificando el JSP accesoDenegado
+
+[33mcommit 174d464ec28e6edd8084a05a0328a45d6ab0b212[m
+Author: ccahui <kris_ti4n@hotmail.com>
+Date:   Sun Oct 21 11:58:57 2018 -0500
+
+    Aparentemente funciona, con modales, y directo
+
+[33mcommit b902c9f37168b19ab66ab4d12e420c44849b9c6a[m
+Author: ccahui <kris_ti4n@hotmail.com>
+Date:   Sun Oct 21 11:09:57 2018 -0500
+
+    Vista de Crud Alumnos todavia con modales
+
+[33mcommit ee3052df4db0fd97e4f7b6ddd25c5463b53788ce[m
+Author: ccahui <kris_ti4n@hotmail.com>
+Date:   Sun Oct 21 10:28:07 2018 -0500
+
+    Vista /colegio/alumnos/editar
+
+[33mcommit 830af7f404f4ea9c522afb04d4ee3d3ca83320fd[m
+Author: ccahui <kris_ti4n@hotmail.com>
+Date:   Sun Oct 21 09:08:02 2018 -0500
+
+    Vista terminada de /colegio/alumnos/grado
+
+[33mcommit edc20468b3c71d6be3200eb128a53731bb4173b4[m
+Author: ccahui <kris_ti4n@hotmail.com>
+Date:   Sat Oct 20 22:29:29 2018 -0500
+
+    Terminando la vista /colegio/alumnos
+
+[33mcommit 500689face06d5c4a6d8c984ae488042b68d8f52[m
+Author: ccahui <kris_ti4n@hotmail.com>
+Date:   Sat Oct 20 15:46:26 2018 -0500
+
+    Modificando /alumnos index para la vista de grados
+
+[33mcommit 5758292add429d2a7033d60cb78a79c5b27a0d24[m
+Author: ccahui <kris_ti4n@hotmail.com>
+Date:   Sat Oct 20 14:06:41 2018 -0500
+
+    Vistas realizadas, modificare la parte de las vistas de CRUD Alumnos
+
+[33mcommit fe2b9ce95e3e3acdcd56afa112a8f759c36592f0[m
+Author: walthersantos <walthersantosqch@gmail.com>
+Date:   Sun Oct 7 00:39:21 2018 -0500
+
+    servidor iniciar sesion
+
+[33mcommit dae7d34fa04942d5a5867fa85730d28091750289[m
+Author: walthersantos <walthersantosqch@gmail.com>
+Date:   Sun Oct 7 00:10:20 2018 -0500
+
+    title updated
+
+[33mcommit 1530d5f1997d5aa151aa6375ef9117f7f31e4a65[m
+Merge: e7c0ec5 6a647fa
+Author: ccahui <kris_ti4n@hotmail.com>
+Date:   Tue Oct 2 20:40:39 2018 -0500
+
+    Merge branch 'master' of https://github.com/ccahui/IHC-PROYECTO
+
+[33mcommit e7c0ec5324d5f35085375793909dacb396814e22[m
+Author: ccahui <kris_ti4n@hotmail.com>
+Date:   Tue Oct 2 20:34:36 2018 -0500
+
+    Primer Avance de IHC
+
+[33mcommit 6a647fa910d7236d21b9893bbf5d2eaf0c374d7f[m
+Author: ccahui <33162467+ccahui@users.noreply.github.com>
+Date:   Mon Oct 1 17:04:57 2018 -0500
+
+    Create README.md
